@@ -4,11 +4,38 @@
     <title>Web AR simple example</title>
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component/dist/aframe-text-geometry-component.min.js"></script>
+    <script src="myfont.typeface.js"></script>
+    
+    
+  https://rawgit.com/ngokevin/kframe/master/components/text-geometry/lib/helvetiker_regular.typeface.json
   </head>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs="debugUIEnabled: false;">
       <a-box position="0 0.5 0" material="color: blue; opacity: 0.7;"></a-box>
-      <a-marker-camera preset="hiro"></a-marker-camera>
+      <a-entity geometry="primitive: plane; height: 1; width: 1" material="side: double"></a-entity>
+      <a-entity geometry="primitive: octahedron"></a-entity>
+      <a-entity geometry="primitive: cylinder; segmentsRadial: 6"></a-entity>
+      <a-entity geometry="primitive: triangle" material="side: double; color: black"></a-entity>
+      
+      
+        <a-assets>
+        <a-asset-item
+          id="optimerBoldFont"
+          src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"
+        ></a-asset-item>
+        <a-mixin id="boldFont" text="font: #optimerBoldFont" position="0 0.5 0" material="color: blue"></a-mixin>
+      </a-assets>
+      
+       <a-entity mixin="boldFont" text-geometry="value: UNFOLD YOUR OWN MYTH"></a-entity>
+      <a-entity text-geometry="value: Dog?; font: #optimerBoldFont"></a-entity>
+      
+ 
+    
+ <a-marker-camera preset="hiro"></a-marker-camera>
+
+    
+    
     </a-scene>
   </body>
 </html>
