@@ -10,18 +10,18 @@
   </head>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs="debugUIEnabled: false;">
-      <a-box position="0 0.5 0" material="color: blue; opacity: 0.7;"></a-box>
-       <a-entity geometry="primitive: plane; height: 1; width: 1" material="side: double"></a-entity>
-      <a-entity geometry="primitive: octahedron"></a-entity>
-      <a-entity geometry="primitive: cylinder; segmentsRadial: 6"></a-entity>
-      <a-entity geometry="primitive: triangle" material="side: double; color: black"></a-entity>
+      <a-box position="0 0 0" material="color: blue; opacity: 0.7;"></a-box>
+       <a-entity position="0 0 0" geometry="primitive: plane; height: 1; width: 1" material="side: double"></a-entity>
+      <a-entity position="0 0 0" geometry="primitive: octahedron"></a-entity>
+      <a-entity position="0 0 0" geometry="primitive: cylinder; segmentsRadial: 6"></a-entity>
+      <a-entity position="0 0 0" geometry="primitive: triangle" material="side: double; color: black"></a-entity>
       
        <a-assets>
         <a-asset-item
           id="optimerBoldFont"
           src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"
         ></a-asset-item>
-        <a-mixin id="boldFont" text="font: #optimerBoldFont" position="0 0.5 0" material="color: blue"></a-mixin>
+        <a-mixin id="boldFont" text="font: #optimerBoldFont" position="0 0 0" material="color: blue"></a-mixin>
       </a-assets>
       
        <a-entity mixin="boldFont" text-geometry="value: UNFOLD YOUR OWN MYTH"></a-entity>
