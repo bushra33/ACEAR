@@ -12,6 +12,18 @@
       <a-entity geometry="primitive: octahedron"></a-entity>
       <a-entity geometry="primitive: cylinder; segmentsRadial: 6"></a-entity>
       <a-entity geometry="primitive: triangle" material="side: double; color: black"></a-entity>
+      
+       <a-assets>
+        <a-asset-item
+          id="optimerBoldFont"
+          src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"
+        ></a-asset-item>
+        <a-mixin id="boldFont" text="font: #optimerBoldFont" position="0 0.5 0" material="color: blue"></a-mixin>
+      </a-assets>
+      
+       <a-entity mixin="boldFont" text-geometry="value: UNFOLD YOUR OWN MYTH"></a-entity>
+      <a-entity text-geometry="value: Dog?; font: #optimerBoldFont"></a-entity>
+      
       <a-marker-camera preset="hiro"></a-marker-camera>
     </a-scene>
   </body>
