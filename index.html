@@ -29,11 +29,12 @@
            
           <a-asset-item id="droidFont" src="droid_sans_mono_regular.typeface.json"></a-asset-item>
         ></a-asset-item>
-        <a-mixin id="boldFont" text="font: #optimerBoldFont" position="0 0 0" material="color: blue"></a-mixin>
-      </a-assets>
-      
-       <a-entity mixin="boldFont" font: text-geometry="value: UNFOLD YOUR OWN MYTH"></a-entity>
-      <a-entity text-geometry="value: Dog?; font: #optimerBoldFont"></a-entity>
+        <a-entity
+        text-geometry="value: UNFOLD YOUR OWN MYTH"
+        material="color: #66E1B4"
+        position="-4 0 -4" rotation="0 20 0"
+      ></a-entity>
+    
     
 <a-marker-camera preset="hiro"></a-marker-camera>
     </a-scene>
