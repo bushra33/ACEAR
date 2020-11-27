@@ -37,7 +37,14 @@
 <a-entity position="3 -3 4.7" rotation="90 45 45" material="color: #112179; opacity: 0.7;" geometry="primitive: octahedron"></a-entity>
 <a-box position="-2.2 4.9 -0.3" rotation="90 45 0" material="color: #115879; opacity: 0.7;"></a-box>    
  
-  
+<a-assets>
+<a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+<a-mixin id="boldFont" text="font: #optimerBoldFont"></a-mixin>
+</a-assets>
+      
+<a-entity position="-0.5 1 -2"  font-size: 14px; rotation="0 20 0" mixin="boldFont" material="color: black" text-geometry="value: UNFOLD YOUR OWN MYTH"></a-entity>
+<a-entity position="-1 0 -3"  font-size: 14px; rotation="0 20 0"mixin="boldFont" material="color: grey" text-geometry="value: UNFOLD YOUR OWN MYTH"></a-entity>
+<a-entity position="-1.5 -1 -4"  font-size: 14px; rotation="0 20 0" mixin="boldFont" material="color: black" text-geometry="value: UNFOLD YOUR OWN MYTH"></a-entity>
       
       <a-marker-camera preset="kanji"></a-marker-camera>
     </a-scene>
