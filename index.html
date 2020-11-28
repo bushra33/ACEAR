@@ -10,33 +10,52 @@
 </head>
 <body style="margin : 0px; overflow: hidden;">
 <a-scene embedded arjs="debugUIEnabled: false;">
-<a-box position="-3 1.5 2" rotation="45 20 0" material="color: #2738a6; opacity: 0.7;"></a-box>
-<a-entity position="-0 -0.5 0" rotation="0 0 90" material="color: #8bf217; " geometry="primitive: triangle"></a-entity>
-<a-entity position="-1.7 -1 3" rotation="90 20 0" material="color: black; opacity: 0.7;" geometry="primitive: cylinder; segmentsRadial: 5" radius="3.2" height="4"></a-entity>
-<a-entity position="-2 2 -1.7" rotation="0 0 90" material="color: #8bf217;" geometry="primitive: triangle;"> </a-entity>   
-<a-entity position="3 3.2 -0.5" rotation="90 45 45" material="color: #112179; opacity: 0.7;" geometry="primitive: octahedron"></a-entity>
-<a-box position="3 2 3" rotation="90 45 0" material="color: #115879; opacity: 0.7;"></a-box>    
+ <a-assets>
 
-<a-box position="-0.3 3 -1.2" rotation="45 20 0" material="color: #8bf217; opacity: 0.7;"></a-box>
-<a-entity position="2.4 -1 2" rotation="0 0 90" material="color: #8bf217; " geometry="primitive: triangle"></a-entity>
-<a-entity position="2.5 -2.7 1" rotation="90 20 0" material="color: #112179; opacity: 0.7;" geometry="primitive: cylinder; segmentsRadial: 5" radius="3.2" height="4"></a-entity>
-<a-entity position="3 -2.5 -0.7" rotation="0 0 90" material="color: #8bf217;" geometry="primitive: triangle;"> </a-entity>   
-<a-entity position="-2.2 -1.9 -0.3" rotation="90 45 45" material="color: #224b3a; opacity: 0.7;" geometry="primitive: octahedron"></a-entity>
-<a-box position="3 2 3" rotation="90 45 0" material="color: #115879; opacity: 0.7;"></a-box>  
-  
-<a-box position="-1.3 3.5 2" rotation="45 20 0" material="color: #2738a6; opacity: 0.7;"></a-box>
-<a-entity position="-2.1 3.4 0" rotation="0 0 90" material="color: #8bf217; " geometry="primitive: triangle"></a-entity>
-<a-entity position="3 4 3" rotation="90 20 0" material="color: black; opacity: 0.7;" geometry="primitive: cylinder; segmentsRadial: 5" radius="3.2" height="4"></a-entity>
-<a-entity position="-2 1 -3.7" rotation="0 0 90" material="color: #8bf217;" geometry="primitive: triangle;"> </a-entity>   
-<a-entity position="-0.1 3.7 -0.5" rotation="90 45 45" material="color: #112179; opacity: 0.7;" geometry="primitive: octahedron"></a-entity>
-<a-box position="2 3.5 3" rotation="90 45 0" material="color: #115879; opacity: 0.7;"></a-box>  
- 
- <a-entity position="2 2.7 -1.2" rotation="0 0 90" material="color: #8bf217; " geometry="primitive: triangle"></a-entity>
-<a-entity position="2 4.5 0" rotation="90 20 0" material="color: black; opacity: 0.7;" geometry="primitive: cylinder; segmentsRadial: 5" radius="3.2" height="4"></a-entity>
-<a-entity position="2.1 -1 1" rotation="0 0 90" material="color: #8bf217;" geometry="primitive: triangle;"> </a-entity>   
-<a-entity position="3 -3 4.7" rotation="90 45 45" material="color: #112179; opacity: 0.7;" geometry="primitive: octahedron"></a-entity>
-<a-box position="-2.2 4 -0.3" rotation="90 45 0" material="color: #115879; opacity: 0.7;"></a-box>    
- 
+        <a-mixin id="limegreen" material="color: #8bf217"></a-mixin>
+        <a-mixin id="greyblue" material="color: #115879"></a-mixin>
+        <a-mixin id="darkgreen" material="color: #224b3a"></a-mixin>
+        <a-mixin id="navyblue" material="color: #112179"></a-mixin>
+        <a-mixin id="grey" material="color: #808080"></a-mixin>
+        <a-mixin id="lightblue" material="color: #2bbaf0"></a-mixin>
+        <a-mixin id="black" material="color: black"></a-mixin>
+
+        <a-mixin id="box" geometry="primitive: box; depth: 1; height: 1; width: 1"></a-mixin>
+        <a-mixin id="cylinder" geometry="primitive: cylinder; height: 0.3; radius: 0.75; segmentsRadial: 6"></a-mixin>
+         <a-mixin id= "triangle" geometry= "primitive: triangle" ; vertex-c="1 -1 0"></a-triangle>
+        <a-mixin id="octahedron" geometry="primitive: octahedron; "primitive: ring; radiusInner: 0.5; radiusOuter: 1""></a-mixin>
+
+      </a-assets>
+      <!-- Meshes. -->
+<a-entity id="triangle1" mixin="limegreen triangle" position="-2 4 3" scale ="1  1.4 0.5" rotation = "0 0 270"> </a-entity>
+<a-entity id="triangle2" mixin="limegreen triangle" position="-5 3.8 0" scale ="1 1.7 1" rotation = "0 0 270"></a-entity>
+<a-entity id="triangle3" mixin="limegreen triangle" position="-0.1 4.6 0" scale ="1 1.2 0.3" rotation = "0 0 270"></a-entity>
+<a-entity id="triangle4" mixin="limegreen triangle" position="-2.5 3.3 0" scale ="1  1.4 0.5" rotation = "0 0 270"></a-entity>
+<a-entity id="triangle5" mixin="limegreen triangle" position="-0.5 3 0" scale ="1 1.7 1" rotation = "0 0 270"></a-entity>
+<a-entity id="triangle6" mixin="limegreen triangle" position="-6 2 0" scale ="1 1.2 0.3" rotation = "0 0 270"></a-entity>
+
+<a-entity id="box1" mixin="lightblue box" position="'-4 3 0" scale ="-4.2 0 0" rotation = "100 120 90"></a-entity>
+<a-entity id="box2" mixin="navyblue box" position="-2 2 0.7" scale ="-4.4 2 0." rotation = "110 120 90"></a-entity>
+<a-entity id="box3" mixin="navyblue box" position="0.6 2.3 0" scale ="-2.2 1.4 0.57" rotation = "40 120 90"></a-entity>
+<a-entity id="box4" mixin="lightblue box" position="-2.7 0.8 1.14" scale ="-2.2 4.3 0.57" rotation = "40 120 90"></a-entity>
+<a-entity id="box5" mixin="navyblue box" position="-3.4 3 3.1" scale ="-2.94 2.3 -0.57" rotation = "60 120 -30"></a-entity>
+<a-entity id="box6" mixin="navyblue box" position="4 2.9 2" scale ="-0.5 3.8 0.57" rotation = "40 120 -50"></a-entity>
+
+<a-entity id="cylinder1" mixin="greyblue cylinder" position="-1 0 0" scale ="1 4 0.57" rotation = "100 120 90"></a-entity>
+<a-entity id="cylinder2" mixin="grey cylinder" position="-2 0 0" scale ="0.7 4 0.3" rotation = "110 120 90"></a-entity>
+<a-entity id="cylinder3" mixin="grey cylinder" position="2.1 1.2 0" scale ="0.7 5 0.2" rotation = "40 120 90"></a-entity>
+<a-entity id="cylinder1" mixin="greyblue cylinder" position="-2.9 2.9 0" scale ="1 4 0.57" rotation = "40 120 90"></a-entity>
+<a-entity id="cylinder2" mixin="grey cylinder" position="2 3.72 1" scale ="0.7 4 0.3" rotation = "60 120 -30"></a-entity>
+<a-entity id="cylinder3" mixin="grey cylinder" position="-4 1.6 0" scale ="0.7 5 0.2" rotation = "40 120 -50"></a-entity>
+<a-entity id="cylinder3" mixin="grey cylinder" position="1 -1  0" scale ="0.7 5 0.2" rotation = "40 120 90"></a-entity>
+
+<a-entity id="octahedron1" mixin="darkgreen octahedron" position="2 3  1" scale ="1 1.4 1" rotation = "40 120 -50"></a-entity>
+<a-entity id="octahedron2" mixin="black octahedron" position="3.5 2 0" scale ="0.5 0.5 1.2" rotation = "60 120 -30"></a-entity>
+<a-entity id="octahedron3" mixin="black octahedron" position="3 0.5 0" scale ="1.2 1.4 1" rotation = "40 120 90"></a-entity>
+<a-entity id="octahedron4" mixin="darkgreen octahedron" position="-2 -2 0" scale ="1 1.4 1" rotation = "40 120 90" ></a-entity>
+<a-entity id="octahedron5" mixin="black octahedron" position="1.2 1.4 1.0" scale ="0.5 0.5 1.2" rotation = "110 120 90"></a-entity>
+<a-entity id="octahedron6" mixin="black octahedron" position="0.5 0.5 1.2" scale ="1.2 1.4 1" rotation = "100 120 90"></a-entity>
+
 <a-assets>
 <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
 <a-mixin id="boldFont" text="font: #optimerBoldFont"></a-mixin>
