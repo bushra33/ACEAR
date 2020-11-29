@@ -19,7 +19,9 @@
         <a-mixin id="grey" material="color: #808080"></a-mixin>
         <a-mixin id="lightblue" material="color: #2bbaf0"></a-mixin>
         <a-mixin id="black" material="color: black"></a-mixin>
+    <a-mixin id="faint" material="opacity: 0.7"></a-mixin>
 
+   
         <a-mixin id="box" geometry="primitive: box; depth: 1; height: 1; width: 1"></a-mixin>
         <a-mixin id="cylinder" geometry="primitive: cylinder; height: 0.3; radius: 0.75; segmentsRadial: 6"></a-mixin>
          <a-mixin id= "triangle" geometry= "primitive: triangle" ; vertex-c="1 -1 0"></a-triangle>
@@ -35,25 +37,25 @@
 
 
 <a-entity id="box1" mixin="lightblue box" position="'-4 3 0" scale ="-4.2 0 0" rotation = "100 120 90"></a-entity>
-<a-entity id="box2" mixin="navyblue box" position="-2 2 0.7" scale ="-4.4 2 0." rotation = "110 120 90"></a-entity>
-<a-entity id="box3" mixin="navyblue box" position="0.6 2.3 0" scale ="-2.2 1.4 0.57" rotation = "40 120 90"></a-entity>
+<a-entity id="box2" mixin="navyblue faint box" position="-2 2 0.7" scale ="-4.4 2 0." rotation = "110 120 90"></a-entity>
+<a-entity id="box3" mixin="navyblue faint box" position="0.6 2.3 0" scale ="-2.2 1.4 0.57" rotation = "40 120 90"></a-entity>
 <a-entity id="box4" mixin="lightblue box" position="-2.7 0.8 1.14" scale ="-2.2 4.3 0.57" rotation = "40 120 90"></a-entity>
 <a-entity id="box5" mixin="navyblue box" position="-3.4 3 3.1" scale ="-2.94 2.3 -0.57" rotation = "60 120 -30"></a-entity>
 <a-entity id="box6" mixin="navyblue box" position="4 2.9 2" scale ="-0.5 3.8 0.57" rotation = "40 120 -50"></a-entity>
 
-<a-entity id="cylinder1" mixin="greyblue cylinder" position="-1 0 0" scale ="1 4 0.57" rotation = "100 120 90"></a-entity>
+<a-entity id="cylinder1" mixin="greyblue faintcylinder" position="-1 0 0" scale ="1 4 0.57" rotation = "100 120 90"></a-entity>
 <a-entity id="cylinder2" mixin="grey cylinder" position="-2 0 0" scale ="0.7 4 0.3" rotation = "110 120 90"></a-entity>
-<a-entity id="cylinder3" mixin="grey cylinder" position="2.1 1.2 0" scale ="0.7 5 0.2" rotation = "40 120 90"></a-entity>
+<a-entity id="cylinder3" mixin="grey faint cylinder" position="2.1 1.2 0" scale ="0.7 5 0.2" rotation = "40 120 90"></a-entity>
 <a-entity id="cylinder1" mixin="greyblue cylinder" position="-2.9 2.9 0" scale ="1 4 0.57" rotation = "40 120 90"></a-entity>
-<a-entity id="cylinder2" mixin="grey cylinder" position="2 3.72 1" scale ="0.7 4 0.3" rotation = "60 120 -30"></a-entity>
-<a-entity id="cylinder3" mixin="grey cylinder" position="-4 1.6 0" scale ="0.7 5 0.2" rotation = "40 120 -50"></a-entity>
-<a-entity id="cylinder3" mixin="grey cylinder" position="1 -1  0" scale ="0.7 5 0.2" rotation = "40 120 90"></a-entity>
+<a-entity id="cylinder2" mixin="grey faint cylinder" position="2 3.72 1" scale ="0.7 4 0.3" rotation = "60 120 -30"></a-entity>
+<a-entity id="cylinder3" mixin="grey cylinder" position="3 1.6 0" scale ="0.7 5 0.2" rotation = "40 120 -50"></a-entity>
+<a-entity id="cylinder3" mixin="grey faint cylinder" position="1 -1  0" scale ="0.7 5 0.2" rotation = "40 120 90"></a-entity>
 
 <a-entity id="octahedron1" mixin="darkgreen octahedron" position="2 3  1" scale ="1 1.4 1" rotation = "40 120 -50"></a-entity>
-<a-entity id="octahedron2" mixin="black octahedron" position="3.5 2 0" scale ="0.5 0.5 1.2" rotation = "60 120 -30"></a-entity>
+<a-entity id="octahedron2" mixin="black faint octahedron" position="3.5 2 0" scale ="0.5 0.5 1.2" rotation = "60 120 -30"></a-entity>
 <a-entity id="octahedron3" mixin="black octahedron" position="3 0.5 0" scale ="1.2 1.4 1" rotation = "40 120 90"></a-entity>
-<a-entity id="octahedron4" mixin="darkgreen octahedron" position="-2 -2 0" scale ="1 1.4 1" rotation = "40 120 90" ></a-entity>
-<a-entity id="octahedron5" mixin="black octahedron" position="1.2 1.4 1.0" scale ="0.5 0.5 1.2" rotation = "110 120 90"></a-entity>
+<a-entity id="octahedron4" mixin="darkgreen faint octahedron" position="-2 -2 0" scale ="1 1.4 1" rotation = "40 120 90" ></a-entity>
+<a-entity id="octahedron5" mixin="black faint octahedron" position="1.2 1.4 1.0" scale ="0.5 0.5 1.2" rotation = "110 120 90"></a-entity>
 <a-entity id="octahedron6" mixin="black octahedron" position="0.5 0.5 1.2" scale ="1.2 1.4 1" rotation = "100 120 90"></a-entity>
 
   
