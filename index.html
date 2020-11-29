@@ -20,8 +20,7 @@
         <a-mixin id="lightblue" material="color: #2bbaf0"></a-mixin>
         <a-mixin id="black" material="color: black"></a-mixin>
         <a-mixin id="faint" material="opacity: 0.7"></a-mixin>
-        <a-mixin id="regFont" text="font: #optimerBoldFont"></a-mixin>
-   
+       
         <a-mixin id="box" geometry="primitive: box; depth: 1; height: 1; width: 1"></a-mixin>
         <a-mixin id="cylinder" geometry="primitive: cylinder; height: 0.3; radius: 0.75; segmentsRadial: 3"></a-mixin>
          <a-mixin id= "triangle" geometry= "primitive: triangle" ; vertex-c="1 -1 0"></a-triangle>
@@ -54,10 +53,11 @@
 <a-entity id="octahedron5" mixin="black octahedron" position="3.2 0 2" scale ="0.5 0.5 1.2" rotation = "0 0 0"></a-entity>
 <a-entity id="octahedron6" mixin="black faint octahedron" position="2 -1 -2" scale ="1.2 1.4 1" rotation = "0 0 0"></a-entity>
  
-  <a-asset-item id="gentillesreg" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/gentilis_bold.typeface.json">
-  <a-mixin id="font1" text="font: #gentillesreg"></a-mixin>
-  </a-asset-item>
-  <a-entity position="-0.5 1 -2"  font-size: 14px; rotation="0 20 0" mixin="font1" material="color: #822e8c" text-geometry="value: UNFOLD YOUR OWN MYTH"></a-entity>
+<a-assets>
+<a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+<a-mixin id="boldFont" text="font: #optimerBoldFont"></a-mixin>
+</a-assets>
+<a-entity position="-0.5 1 -2"  font-size: 14px; rotation="0 20 0" mixin="boldFont" material="color: #822e8c" text-geometry="value: UNFOLD YOUR OWN MYTH"></a-entity>
 
   
       <a-marker-camera preset="kanji"></a-marker-camera>
